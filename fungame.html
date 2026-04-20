@@ -237,7 +237,7 @@
             btn.onclick = () => { clearInterval(sTimer); if(o === q.a) { btn.classList.add('correct'); sScore++; } else btn.classList.add('wrong'); setTimeout(nextSQ, 800); };
             optC.appendChild(btn);
         });
-        document.getElementById('score-display').innerText = `النقاط: ${sScore}`;
+       
     }
     function nextSQ() { curS++; showSQ(); }
     function endSG() { document.getElementById('speed-code-display').innerHTML = "انتهى التحدي!"; document.getElementById('options-container').innerHTML = ''; }
